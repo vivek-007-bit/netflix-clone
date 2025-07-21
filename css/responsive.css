@@ -1,0 +1,80 @@
+ /*For smartphone*/
+ @media (max-width: 700px) {
+     .nav-bar {
+         padding: 0px 15px;
+     }
+
+     .logo img {
+         width: 150px;
+         height: 70px;
+         margin-top: 15px;
+     }
+
+     .main {
+         height: 70vh;
+         width: 100vw;
+         background-size: max(1200px, 105vw);
+     }
+
+     .hero {
+         width: 100vw;
+     }
+
+     .hero h1 {
+         font-size: 45px;
+     }
+
+     .hero h4 {
+         font-size: 12px;
+     }
+
+     .hero input,
+     .hero button {
+         font-size: 15px;
+     }
+
+     .section {
+         padding: 20px 10px;
+     }
+
+     .section>h3 {
+         margin-left: 5px;
+         margin-bottom: 5px;
+     }
+
+     .card-container {
+         width: 100vw;
+         height: auto;
+         flex-direction: column;
+         padding: 0;
+         gap: 0px;
+     }
+
+     .card:nth-child(1) {
+         margin-top: 0;
+     }
+
+     .card {
+         width: 96%;
+         margin-bottom: 5px;
+         margin-top: 0;
+     }
+
+     .accordion,
+     .panel {
+         font-size: 20px;
+     }
+
+     .hero-section form {
+         width: 98%;
+     }
+
+     .hero-section input,
+     .hero-section button {
+         height: 55px;
+         font-size: 15px;
+     }
+
+
+ }
+

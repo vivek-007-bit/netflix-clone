@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Signin</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+         @media (max-width: 1200px) {
+            .wrapper {
+                background: black;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
+        :root {
+            --bg-black: rgba(8, 7, 7, 0.718);
+            --bg-grey: rgba(34, 32, 32, 0.873);
+            --grey-txt: rgb(161, 157, 157);
+            --padding: 20px 15px;
+            --border-radius: 3px;
+            --height: 35px;
+            --boder-gray: solid rgba(212, 204, 204, 0.537) 1.5px;
+            --bg-transparent: rgba(255, 255, 255, 0);
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .wrapper {
+            background: url("../bg.jpg");
+            height: 100vh;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+        }
+
+        .transparent-box {
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            opacity: 0.35;
+        }
+
+        .nav {
+            background-color: rgba(255, 255, 255, 0);
+            width: 100vw;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .logo {
+            width: 200px;
+            height: 70px;
+            margin-left: 10px;
+        }
+
+        .container {
+            background-color: var(--bg-black);
+            width: 380px;
+            height: 75vh;
+            margin-top: 20px;
+            padding: 50px 30px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            border-radius: var(--border-radius);
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"],
+        .container button {
+            outline: none;
+            border: var(--boder-gray);
+            height: var(--height);
+            border-radius: var(--border-radius);
+            margin-bottom: 10px;
+            color: white;
+            width: 100%;
+        }
+
+        .container input {
+            padding: var(--padding);
+            background-color: var(--bg-transparent);
+            color: rgba(220, 211, 211, 0.893);
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        .btn-red {
+            background-color: rgb(255, 0, 0);
+            border: none !important;
+            outline: none;
+        }
+
+        .btn-red:hover {
+            background-color: rgb(204, 3, 3);
+        }
+
+        .btn-gray {
+            background-color: rgba(93, 91, 91, 0.551);
+            border: none !important;
+        }
+
+        .btn-gray:hover {
+            background-color: rgba(93, 91, 91, 0.829);
+        }
+
+        .container a:hover {
+            color: rgba(207, 192, 192, 0.923);
+        }
+
+        .separator {
+            margin: 7px 0 15px 0;
+            text-align: center;
+            color: var(--grey-txt);
+        }
+
+        form label {
+            width: 100%;
+            margin: 8px 0;
+            display: flex;
+            gap: 5px;
+        }
+
+        .footer {
+            width: 100vw;
+            background-color: var(--bg-grey);
+            position: relative;
+            z-index: 1000;
+        }
+
+        .footer {
+            padding: 12px 15px;
+        }
+
+        .footer ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .footer ul li {
+            font-size: 13px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="transparent-box"></div>
+        <div class="nav">
+            <img src="../logo.png" alt="not found" class="logo">
+        </div>
+        <div class="container">
+            <h1>Sign In</h1>
+            <form action="">
+                <input type="text" name="email" placeholder="Email or mobile number" required>
+                <input type="password" name="password" placeholder="Password">
+                <button class="btn-red">Sign In</button>
+                <span class="separator">OR</span>
+                <button class="btn-gray">Use a sign-in code</button>
+                <a href="">Forgot password?</a>
+                <label for="Remember Me"><input type="checkbox" name="Remember Me">Remember Me</label>
+            </form>
+            <span>
+                <p>New to Netfix? <a href="">Sign Up now.</a></p>
+            </span>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>Questions?Call <a href="tel:+0008009191743">000-800-919-1743(Toll-Free)</a></p>
+        <ul>
+            <li>FAQ</li>
+            <li>Help Centre</li>
+            <li>Terms of Use</li>
+            <li>Privacy</li>
+        </ul>
+    </div>
+</body>
+
+</html>
